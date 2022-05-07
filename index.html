@@ -17,7 +17,8 @@
       {
         "imports": {
           "three": "https://unpkg.com/three@0.140.0/build/three.module.js",
-          "controls" : "https://unpkg.com/three@0.140.0/examples/jsm/controls/OrbitControls.js"
+          "controls" : "https://unpkg.com/three@0.140.0/examples/jsm/controls/OrbitControls.js",
+          "loaders" : "https://unpkg.com/three@0.140.0/examples/jsm/loaders/GLTFLoader.js"
         }
       }
     </script>
@@ -26,6 +27,7 @@
 
         import * as THREE from 'three';
         import {OrbitControls} from 'controls';
+        import {GLTFLoader} from 'loaders';
 
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); 
